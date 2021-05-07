@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Haasyl</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b87c63a2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">haasyl</div>
+      <div class="menu">
+        Already have an account? <button class="menuButton">Sign in</button>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="hero">
+        <div class="wrapper">
+          <div class="title">
+            Calculate your Earned Salary Now!
+            <div class="desc">
+              Each day of work adds value to your company. How much does it
+              <br />
+              add to you? Register now to find out.
+            </div>
+          </div>
+          <div class="imageWrapper">
+            <img src="https://dummyimage.com/350x600/000/fff" />
+          </div>
+        </div>
+      </div>
+      <div class="Form">
+        <div class="wrapper">
+          <div class="title">
+            Get started
+            <div class="desc">Please fill in the details</div>
+          </div>
+          <form>
+            <div><label>First Name</label> <input type="text" required /></div>
+            <div><label>Last Name</label> <input type="text" required /></div>
+            <div>
+              <label>Mobile Number</label>
+              <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+            </div>
+            <div>
+              <label>Basic Salary per Month ( in Rupees )</label>
+              <input
+                type="text"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </div>
+            <div>
+              <label>Salary Date</label>
+              <div class="selectDiv">
+                <select id="cars" name="cars" required>
+                  <option value="volvo">1st of every month</option>
+                  <option value="saab">2nd</option>
+                  <option value="fiat">3rd</option>
+                  <option value="audi">4th</option>
+                </select>
+              </div>
+            </div>
+            <button>Register Now</button>
+            <div class="terms">
+              By registering, you agree to haasyl's <a>Terms of Service</a> and
+              <a>Privacy Policy</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
